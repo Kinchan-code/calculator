@@ -35,7 +35,7 @@ class _CalculatorState extends State<Calculator> {
     } else if (value == "=") {
       if (input.isNotEmpty) {
         var userInput = input;
-        userInput = input.replaceAll("X", "*");
+        userInput = input.replaceAll("x", "*");
         Parser p = Parser();
         Expression expression = p.parse(userInput);
         ContextModel cm = ContextModel();
@@ -142,7 +142,7 @@ class _CalculatorState extends State<Calculator> {
                 text: "X",
                 backgroundColor: operatorColor,
                 textColor: blueColor,
-                onPressed: () => onButtonClick("X"),
+                onPressed: () => onButtonClick("x"),
               ),
             ],
           ),
